@@ -29,8 +29,7 @@ public class Main {
 
 				Article article = new Article(id, title, body);
 				articles.add(article);
-				lastArticleId++;
-				
+
 				Connection conn = null;
 				PreparedStatement pstmt = null;
 
@@ -44,8 +43,8 @@ public class Main {
 					String sql = "INSERT INTO article";
 					sql += " SET regDate = NOW()";
 					sql += ", updateDate = NOW()";
-					sql += ", title = '"+ title + "'";
-					sql += ", `body` = '"+ body + "'";
+					sql += ", title = '" + title +"'";
+					sql += ", `body` = '" + body +"'";
 
 					System.out.println(sql);
 
@@ -75,6 +74,8 @@ public class Main {
 						e.printStackTrace();
 					}
 				}
+
+				lastArticleId++;
 
 				System.out.println(article);
 			} else if (cmd.equals("article list")) {
