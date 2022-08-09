@@ -13,9 +13,14 @@ DESC article;
 INSERT INTO article
 SET regDate = NOW(),
 updateDate = NOW(),
-title = CONCAT('Á¦¸ñ',RAND()),
-`body` = CONCAT('³»¿ë',RAND());
+title = CONCAT('ì œëª©',RAND()),
+`body` = CONCAT('ë‚´ìš©',RAND());
 
 SELECT * FROM article;
+
+SELECT *
+FROM article
+ORDER BY id DESC
+
 
 #select rand()
