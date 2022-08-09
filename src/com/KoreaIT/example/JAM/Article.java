@@ -1,6 +1,6 @@
 package com.KoreaIT.example.JAM;
 
-public class Article extends Object{
+public class Article extends Object {
 
 	public int id;
 	public String title;
@@ -14,7 +14,6 @@ public class Article extends Object{
 
 	@Override
 	public String toString() {
-		return "게시물을 작성하였습니다 [번호 = " + id + ", 제목 = " + title + ", 내용 = " + body + "]";
+		return "Article [id=" + id + ", title=" + title + ", body=" + body + "]";
 	}
-
 }
