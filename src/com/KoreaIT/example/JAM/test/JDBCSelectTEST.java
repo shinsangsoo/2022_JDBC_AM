@@ -52,6 +52,7 @@ public class JDBCSelectTEST {
 		} finally {
 			try {
 				if (rs != null && !rs.isClosed()) {
+					
 					rs.close();
 				}
 			} catch (SQLException e) {
