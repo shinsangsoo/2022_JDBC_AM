@@ -27,6 +27,8 @@ public class Article extends Object {
 		this.body = (String) articleMap.get("body");
 	}
 
+	
+
 	@Override
 	public String toString() {
 		return "Article [id=" + id + ", regDate=" + regDate + ", updateDate=" + updateDate + ", title=" + title
